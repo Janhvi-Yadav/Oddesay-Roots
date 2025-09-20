@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>BOOKING</title>
+    <link rel="stylesheet" href="tryscript.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="booking1.css">
+</head>
+<body class="bg-gray-100">
+
+
+
+<div class="container">
+    <div class="text-center mb-6">
+        <h1 class="title">Book Your Place</h1>
+    </div>
+    <div class="flex-container">
+        <img alt="A scenic view of a travel destination" class="image" src="https://storage.googleapis.com/a1aa/image/ev5eTXJB2lrR50dqNCWIewXs0hhR86CrhoKi1hLE5FC3NjDoA.jpg"/>
+        <div class="form-container">
+            <h2 class="form-title">Book Your Place Now</h2>
+            <form>
+                <div class="form-group">
+                    <label for="placeName">
+                        Choose your destination
+                    </label>
+
+                    <select id="placeName" onchange="updateCities()">
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Punjab">Punjab</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cityName">City</label>
+                    <select id="cityName" onchange="updateSites()">
+                        <option value="">Select City</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="siteName">Tourist Attractions</label>
+                    <div id="siteName">
+                        
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="members">Members</label>
+                    <input id="members" placeholder="0" type="number"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="Guide">Guide/Advisor</label>
+                    <select id="Guide" >
+                        <option value="">Optional</option>
+                        <option value="English/Hindi">English/Hindi</option>
+                        <option value="English/Telugu">English/Telugu</option>
+                        <option value="English/Bengali">English/Spanish/Bengali</option>
+                        <option value="English/Russian">English/Russian</option>
+
+
+
+                    </select>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="startDate">Journey Starts On</label>
+                    <input id="startDate" type="date"/>
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Journey Ends On</label>
+                    <input id="endDate" type="date"/>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="travel.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.form-popup {
+     position: fixed;
+     top:50%;
+     left: 50%;
+     max-width: 720px;
+     width: 100%;
+     background:#fff;
+     border: 2px solid #fff;
+     transform: translate(-50%,-50%);
+}
+
+.form-popup .form-box{
+    display: flex;
+}
+
+.form-box .form-details{
+    max-width: 330px;
+}
+
+.form-box h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-box .form-content{
+    width: 100%;
+    padding: 35px;
+}
+form .input-field{
+    height: 50px;
+    width: 60%;
+    margin-top: 20px;
+    border: #717171;
+}
+
+form .input-field input{
+    width: 50%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95 rem;
+    border-radius: 3px;
+    border: 1 px solid #717171;
+}

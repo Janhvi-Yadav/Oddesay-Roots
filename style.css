@@ -1,0 +1,383 @@
+*{
+    margin:0;
+    padding:0;
+  
+  }
+  @font-face  {
+    font-family:"Dongle-light" ;
+    src: url("Dongle/Dongle-Light.ttf");
+  }
+  @font-face {
+    font-family:"Dongle-regular" ;
+    src: url("Dongle/Dongle-regular.ttf");
+  }
+  @font-face {
+    font-family:"Dongle-bold" ;
+    src: url("Dongle/Dongle-bold.ttf");
+  }
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  header{
+    display:flex;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.1) ;
+    justify-content: flex-start;
+      width: 100vw; /* Full screen width */
+
+  }
+  
+  .logo img{
+    width: 100px;
+    height: 65px;
+  
+  
+  }
+  .nav-menu {
+  margin-left: auto; /* Push nav menu to the right end */
+}
+  .nav-menu ul{
+   display: flex;
+   align-items: flex;
+  }
+  .nav-menu li{
+    list-style:none;
+    margin-inline: 20px;
+    /* align-items: center; */
+  
+  }
+  .nav-menu a{
+    text-decoration: none;
+  }
+  /* .nav-menu li:last-child{
+    justify-content: flex-end;
+    align-items: flex-end;
+  } */
+  .nav-menu a{
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size:1.6rem;
+    color:black;
+  transition: 0.3s;
+  }
+  
+  .nav-menu a:hover{
+    color:#ff7f50;
+  }
+  .icons{
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+  .icons i{
+    font-size: 25px;
+    color: black;
+  }
+  #bar{
+    display: none;
+  }
+  .hero {
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  position: relative;
+  overflow: hidden;
+}
+
+  
+  /* .hero{
+    height: 700px;
+    overflow:hidden;
+  } */
+  .hero-image img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-2;
+  }
+  .hero-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    text-align: center;
+    color: #fff;
+  
+  }
+  .hero-content h1{
+    font-family: "Dongle-bold";
+    font-size: 3.5rem;
+  }
+  .hero-content p{
+    font-family: "Dongle-regular";
+    font-size: 1.8rem;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  
+  }
+  .hero-button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.68rem;
+    transition: all ease 0.3s;
+  }
+  .hero-button:hover{
+    background-color: #333;
+  }
+  
+  .head{
+    text-align: center;
+    padding: 85px;
+  }
+  
+  .booking{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+  }
+  .booking img{
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 6px rgb(206, 204, 204);
+  }
+  .bookform{
+    margin-inline: 28px;
+    width: 320px;
+    background-color: white;
+    padding: 22px;
+    box-shadow: 0px 4px 4px 6px rgb(206, 204, 204);
+    border-radius: 4px;
+  
+  }
+  
+  
+  
+  .destinations{
+    font-size: 2.4rem;
+    font-family: "Dongle-bold";
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+  }
+  .destination-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+  }
+  .destination-items img{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius:20px ;
+    box-shadow: 0px 6px 6px 10px rgb(210, 209, 209);
+  
+  }
+  .destination-items {
+    text-align: left;
+  }
+  .destination-items h3{
+    font-size: 2rem;
+  }
+  .destination-items p{
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+  .contact{
+    padding-top: 20px;
+    padding:80 px ;
+    text-align: center;
+    background-color: #F7F7F7;
+  }
+  .contact h3{
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+  }
+  .contactinfo p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  .contactinfo ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .contactinfo li{
+  margin: 0 20px;
+  font-family: "Dongle-regular";
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  }
+  .contactinfo li a{
+    text-decoration: none;
+    font-family: "Dongle-regular";
+    color: black;
+  }
+  .contactinfo i{
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .form{
+    width:100%;
+  
+  }
+  input,textarea{
+    width:70%;
+    padding: 10px ;
+    margin: 20px 0;
+    border: none;
+    box-shadow: 0 0 5% rgba(0,0,0,0.1);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family:"Dongle-regular";
+  
+  }
+  textarea{
+    height: 200px;
+  }
+  .form button{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.68rem;
+    transition: all ease 0.3s;
+    border: none;
+  }
+  .form button:hover{
+    background-color: #333;
+  }
+  footer{
+    background: #333;
+    color:#fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 66px;
+    align-items: center;
+    margin-top: 55px;
+  
+  }
+  .text p{
+    margin-top:11px;
+  }
+  .social-icons a{
+    color: #fff;
+    font-size: 24px;
+    margin: right 20px; 
+  }
+  footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+  }
+ 
+  
+
+
+
+
+
+
+  
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.container h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.container form {
+    display: flex;
+    flex-direction: column;
+}
+.container form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.container form button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.container form button:hover {
+    background-color: #0056b3;
+}
+.container .toggle-link {
+    text-align: center;
+    margin-top: 10px;
+}
+.container .toggle-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.container .toggle-link a:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

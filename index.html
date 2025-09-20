@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oddesay Roots</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <header>
+        <header>
+        <div class= "logo">
+             <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/009/468/436/non_2x/bus-traveler-camping-car-illustration-logo-vector.jpg"></a>
+    </div>
+
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#destinations">Destination</a></li>
+            <li><a href="#hotels">Hotel</a></li>
+            <li><a href="#activity"> Activity</a></li>
+            <li><a href="#guide">Guide</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="icons">
+                <i  id="bar" class="fa-solid fa-bars"></i>
+                <i id="user" class="fa-solid fa-user" onclick="openModal()"></i>
+            </div>
+        </ul>
+       
+        </div>
+    </nav>
+
+        </header>
+    </header> 
+
+    
+    <main>
+        <section class="hero">
+           <div class="hero image">
+            <img src="https://www.hdwallpapers.in/download/landscape_view_trees_house_lake_reflection_clouds_sky_nature_wallpaper_background_4k_hd_nature-1920x1080.jpg">
+           </div> 
+           <div class="hero-content">
+           
+    
+            <h1>Welcome to our Travel Website</h1>
+            <p>Discover amazing destinations and book your next trip wit us.</p>
+            <a href="booking.html" class="hero-button" >Book Now</a>    
+        </div>
+        </section>
+
+
+        <div id="auth-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="container" id="login-container">
+                    <h2>Login</h2>
+                    <div id="login-error" class="error-message" style="display: none;">User not registered</div>
+                    <form onsubmit="handleLogin(event)">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                        <input type="password" id="login-password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div class="toggle-link">
+                        <p>Don't have an account? <a href="#" onclick="toggleForm('signup')">Sign Up</a></p>
+                    </div>
+                </div>
+    
+                <div class="container" id="signup-container" style="display: none;">
+                    <h2>Sign Up</h2>
+                    <form onsubmit="handleSignup(event)">
+                        <input type="text" id="signup-name" placeholder="Full Name" required>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                        <input type="password" id="signup-password" placeholder="Password" required>
+                        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <div class="toggle-link">
+                        <p>Already have an account? <a href="#" onclick="toggleForm('login')">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+      <div class="destinations">
+        <h2>Best Packages</h2>
+        <br>
+        <div class="destination-grid">
+            <div class="destination-items">
+                <img src="https://media.istockphoto.com/id/1223612773/photo/the-kalka-to-shimla-railway-is-a-2-ft-6-in-narrow-gauge-railway-in-north-india-which.jpg?s=612x612&w=0&k=20&c=vYxFBTbvcLcivcYjtFB-S_P7ETUwgIj0mAk84l9uC1g=">
+                <h3>Shimla</h3>
+                <p>3 Days Tour</p>
+                <p>24,999 Only</p>
+
+            </div>
+            <div class="destination-items">
+                <img src="https://www.keralaholidays.com/uploads/tourpackages-gallery/thumb/Kerala-Natures-Extravaganza_(1)1.jpg">
+                <h3>Kerala</h3>
+                <p>3 Days Tour</p>
+                <p>29,999 Only</p>
+
+            </div>
+            <div class="destination-items">
+            <img src="https://rajasthanyatra.in/blog/wp-content/uploads/2024/08/Customised-travel-packages-for-Rajasthan.webp">
+            <h3>Rajasthan</h3>
+            <p>3 Days Tour</p>
+            <p>39,999 Only</p>
+
+        </div>
+        </div>
+      </div>
+
+      
+
+
+
+        <section  id="destinations"  class="destinations">
+            <h2>Popular destinations</h2>
+            <br>
+            <div class="destination-grid">
+                <div class="destination-items">
+                    <img src="https://static.langimg.com/photo/imgsize-160600,msid-86886479/navbharat-times.jpg" alt="">
+
+                    <h3>
+                        Rajasthan
+                    </h3>
+                    <p>Ideal duration:7-8 days</p>
+                    <p>Best Time:November-March</p>
+                </div>
+                <div class="destination-items">
+                    <img src="https://spicetreemunnar.com/wp-content/uploads/2017/10/kerala-tourism-1024x576.jpg">
+                    <h3>Kerala</h3>
+                    <p>Ideal Time:5-7 days</p>
+                    <p>Best Time:October-February</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/cityscape-of-shimla-himachal-pradesh-city-1-hero?qlt=82&ts=1726730693575">
+                        <h3>Himachal Pradesh</h3>
+                        <p>Ideal duration 3-7 days </p>
+                        <p>Best Time:March-June</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://www.holidify.com/images/bgImages/KASHMIR.jpg">
+                        <h3>Kashmir</h3>
+                        <p>Ideal duration: 3-7 days</p>
+                        <p>Best Time: September - November; March - May</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://www.holidify.com/images/bgImages/LADAKH.jpg">
+                        <h3>Ladakh</h3>
+                        <p>Ideal duration: 5-7 days</p>
+                        <p>Best Time: April-Mid July</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://www.holidify.com/images/bgImages/AGRA.jpg">
+                        <h3>Agra</h3>
+                        <p>Ideal duration: 1-2 days</p>
+                        <p>Best Time:October to March</p>
+                    </div>
+                
+            </div>
+
+        </section>
+        <section  id="hotels"  class="destinations">
+            <h2>Featured Hotels</h2>
+            <br>
+            <div class="destination-grid">
+                <div class="destination-items">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/13/22/e0/celebrating-culture-at.jpg?w=300&h=300&s=1" alt="">
+                
+
+                    <h3>
+                        Trindent Udaipur
+                    </h3>
+                    <p>Serene lakeside hotel offering stunning views, lush green gardens, and peaceful atmosphere. Known for exceptional hospitality and a unique buggy service.</p>
+                </div>
+                <div class="destination-items">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/2f/20/79/facade.jpg?w=300&h=300&s=1">
+                    <h3>Taj Green Cave Resort</h3>
+                    <p> "Absolute 5 star experience. The pool is amazing and staff and attentive but not overbearing. It is pricey but worth it because the ambience is out of this world. You cannot help but relax here."</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/3e/31/67/radisson-blu-resort-dharamshal.jpg?w=300&h=300&s=1">
+                        <h3>Radisson Blu Resort,Dharamshala</h3>
+                        <p>
+                            "Very well made and spacious rooms. An Uber luxury resort in the quiet hills of Dharamshala. Has a great staff which is courteous and professional. Overall a very nice and comfortable place to stay." </p>
+                    </div>
+            </div>
+            <section  id="activity"  class="destinations">
+                <h2>Activities</h2>
+                <br>
+                <div class="destination-grid">
+                    <div class="destination-items">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Pacuareriverrafting.jpg" alt="">
+                    
+    
+                        <h3>
+                        White River Rafting in Rishikesh
+                        </h3>
+                        <p> Rishikesh is the capital of river rafting in India, where the holy Ganga River flows, offering the speed of Grade</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://www.indian-ocean.com/wp-content/uploads/2017/05/excursion18.jpg">
+                        <h3>Skydiving in Mysore</h3>
+                        <p> Imagine yourself in the mid-air without any movement and watching the bird’s eye view of the land. Skydiving is the most thrilling adventure you can ever experience.</p>
+                        </div>
+                        <div class="destination-items">
+                            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pancha-pandava-mandapam-mamallapuram-tamil-nadu-tri-hero?qlt=82&ts=1727166919709&wid=800">
+                            <h3>Manali to Leh Bike Trip</h3>
+                            <p>Imagine riding your bike across the valleys and never ending road, and the path giving you the majestic view of snowpacked mountain. Isn’t this a wonderful experience? </p>
+                        </div>
+                </div>
+                <br>
+                <a href="Activity.html" class="hero-button" >Book Your Activity with us</a>
+
+
+        </section>
+
+            <section  id="guide"  class="destinations">
+                <h2>Guiding</h2>
+                <br>
+                <div class="destination-grid">
+                    <div class="destination-items">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/kanak-bhawan-ayodhya-uttar-pradesh-tri-hero-1?qlt=82&ts=1727167274462&wid=800" alt="">
+                    
+    
+                        <h3>
+                        2 Day's Ayodhya
+                        </h3>
+                        <p>A spiritual Gateway in Ayodhya</p>
+                    </div>
+                    <div class="destination-items">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/meenakshi-amman-temple-madurai-tamil-nadu-tri-hero?qlt=82&ts=1727167291042&wid=800">
+                        <h3>2 Day's Madurai</h3>
+                        <p> Unravelling Madurai's Cultural and historical threads</p>
+                        </div>
+                        <div class="destination-items">
+                            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pancha-pandava-mandapam-mamallapuram-tamil-nadu-tri-hero?qlt=82&ts=1727166919709&wid=800">
+                            <h3>2 Day's Mammallapuram</h3>
+                            <p>Mammalapuram marvels: a journey through time </p>
+                        </div>
+                </div>
+
+        </section>
+        <section id="contact" class="contact">
+         <h3>Contact Us</h3>
+         <div class="contactinfo">
+          <p> If you have any questions or would like to book a trip,please fill out the form below or contact us using the information provided.</p>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i>123 Main St</li>
+            <li><i class="fas fa-envelope"><a href="mailto:info@travelcompany.com">info@travelcompany.com</a></i></li>
+            <li><i class="fa-solid fa-phone"><a href="tel:225-4587">225-4587</a></i></li>
+          </ul>
+         </div>
+         <form action="#" class="form">
+            <div class="form-group">
+                <input type="email" name="email" id="email" placeholder="Enter your E-mail">
+            </div>
+            <div class="form-group">
+               <textarea name="textarea" id="textarea"  cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <input type="name" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <button type="submit">Send Message</button>
+            
+         </form>
+         <br>
+         <br><br> 
+        </section>
+        <footer> 
+            <div class="text">
+                <h3>About Us</h3>
+                <p>Customer Support</p>
+                <p>Payment Security</p>
+                <p>Privacy Policy</p>
+                
+                
+            </div>
+            <div class="text">
+                <h3>Travel</h3>
+                <p>Good Home</p>
+                <p>Quality</p>
+                <p>Price</p>
+            </div>
+            <div class="text">
+                <h3>Tour</h3>
+                <p>Quality</p>
+                <p>Price</p>
+                <p>Affordable</p>
+                
+            </div>
+            
+            <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+        
+        <P>&copy;2023 Your Travel Website.All Rights Reserved</P>
+    </footer>
+       
+    </main>
+    <script src="travel.js"></script>
+</body>
+
+</html>

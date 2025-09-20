@@ -1,0 +1,115 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   BOOKING
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <div class="container mx-auto p-4">
+   <div class="text-center mb-8">
+    <h1 class="text-4xl font-bold text-gray-800">
+     Book Your Activity
+    </h1>
+   </div>
+   <div class="bg-white shadow-md rounded-lg overflow-hidden flex flex-col md:flex-row">
+    <img alt="A scenic view of a travel destination with mountains, lakes, and a clear sky" class="w-full md:w-1/2 h-64 md:h-auto object-cover" height="1280" src="https://storage.googleapis.com/a1aa/image/IbF8srqVEAYrG5pFefeIYjbxf742k1fFZP7GLHE1jHoHtmQgC.jpg" width="720"/>
+    <div class="p-6 w-full md:w-1/2">
+     <h2 class="text-2xl font-semibold mb-4">
+      Book Your Activity Now
+     </h2>
+     <form id="bookingForm">
+      <div class="mb-4">
+       <label class="block text-gray-700" for="state">
+        Select State
+       </label>
+       <select class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="state" onchange="updateCities()">
+        <option value="">
+         Select State
+        </option>
+        <option value="maharashtra">
+         Maharashtra
+        </option>
+        <option value="goa">
+         Goa
+        </option>
+        <option value="kerala">
+         Kerala
+        </option>
+        <option value="rajasthan">
+         Rajasthan
+        </option>
+        <option value="uttarakhand">
+         Uttarakhand
+        </option>
+        <option value="himachal-pradesh">
+         Himachal Pradesh
+        </option>
+        <option value="karnataka">
+         Karnataka
+        </option>
+        <option value="tamil-nadu">
+         Tamil Nadu
+        </option>
+        <option value="west-bengal">
+         West Bengal
+        </option>
+        <option value="sikkim">
+         Sikkim
+        </option>
+       </select>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="city">
+        Select City
+       </label>
+       <select class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="city" onchange="updateActivities()">
+        <option value="">
+         Select City
+        </option>
+       </select>
+      </div>
+      <div class="mb-4 relative">
+       <label class="block text-gray-700" for="activityName">
+        Choose your activity
+       </label>
+       <button class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-left" id="activityButton" type="button" onclick="toggleActivityList()">
+        Select Activity
+       </button>
+       <div id="activityOptions" class="absolute w-full bg-white border rounded-lg mt-1 hidden max-h-48 overflow-y-auto z-10">
+       </div>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="members">
+        Member's
+       </label>
+       <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="members" placeholder="0" type="number"/>
+      </div>
+      <div class="mb-4">
+       <label class="block text-gray-700" for="activityDate">
+        Activity Date
+       </label>
+       <input class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" id="activityDate" type="date"/>
+      </div>
+      <div class="flex justify-center">
+
+      <button class="w-1/2 bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500" id="submit" type="submit">
+       Submit
+      </button>
+      </div>
+     </form>
+     <div id="confirmationMessage" class="mt-4 text-green-500 text-lg font-semibold hidden">
+      Your activities are planned!
+     </div>
+    </div>
+   </div>
+  </div>
+  <script src="activity1.js"></script>
+
+  
+ </body>
+</html>
